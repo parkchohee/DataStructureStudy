@@ -9,6 +9,10 @@ linkedStack::linkedStack()
 
 linkedStack::~linkedStack()
 {
+	while (!isEmpty())
+	{
+		delete pop();
+	}
 }
 
 bool linkedStack::isEmpty()
